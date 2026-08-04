@@ -61,7 +61,7 @@ def _save(notes: list[dict]) -> None:
 
 @app.get("/healthz")
 def healthz():
-    return ("ok\n", 200) if HEALTH_FILE.exists() else ("broken\n", 500)
+    return ("im ok\n", 200) if HEALTH_FILE.exists() else ("broken\n", 500)
 
 
 @app.get("/ready")
